@@ -67,6 +67,7 @@
 			"description": "An array of the products purchased",
 			"additionalItems": false,
 			"maxItems": 300,
+			"minItems": 1,
 			"default": [],
 			"items": {
 				"type": "object",
