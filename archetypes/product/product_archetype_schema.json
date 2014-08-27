@@ -190,6 +190,18 @@
 					}
 				}
 			}
+		},
+		"created": {
+			"type": "string",
+			"description": "Date and time the product was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
+			"default": ""
+		},
+		"updated": {
+			"type": "string",
+			"description": "Date and time the product was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
+			"default": ""
 		}
 	}
 }
