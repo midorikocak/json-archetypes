@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Note Schema",
+    "description": "The Note Archetype - Essential properties that define a note",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["body"],
+    "properties": {
+    		"body": {
+    				"type": "string",
+    				"description": "Main text of the note",
+    				"maxLength": 5000,
+    				"default": ""
+    		},
+    		"title": {
+    				"type": "string",
+    				"description": "Title of the note",
+    				"maxLength": 140,
+    				"default": ""
+    		},
+    		"creation_date": {
+    				"type": "string",
+    				"description": "Date and time note was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+					"format": "date-time",
+					"default": ""
+    		},
+    		"category": {
+					"type": "string",
+					"description": "General category of the note, e.g. Science",
+					"maxLength": 40,
+					"default": ""
+			},
+			"subcategory": {
+					"type": "string",
+					"description": "Specific category of the note, e.g. Biology",
+					"maxLength": 40,
+					"default": ""
+			},
+			"tags": {
+					"type": "array",
+					"maxItems": 6,
+					"uniqueItems": true,
+					"default": [],
+					"items": {
+							"type": "string",
+							"maxLength": 30,
+							"default": ""
+					}
+			},
+			"image_archetypes": {
+					"type": "array",
+					"description": "Array of Image Archetype IDs",
+					"uniqueItems": true,
+					"additionalItems": false,
+					"default": [],
+					"maxItems": 15,
+					"items": {
+							"type": "string",
+							"description": "Image Archetype ID",
+							"maxLength": 50,
+							"default": ""
+					}
+			},
+			"video_archetypes": {
+					"type": "array",
+					"description": "Array of Video Archetype IDs",
+					"uniqueItems": true,
+					"additionalItems": false,
+					"default": [],
+					"maxItems": 15,
+					"items": {
+							"type": "string",
+							"description": "Video Archetype ID",
+							"maxLength": 50,
+							"default": ""
+					}
+			},
+			"draft": {
+					"type": "boolean",
+					"description": "Is the Archetype instance in draft mode or published",
+					"default": false
+			},
+			"updated": {
+					"type": "string",
+					"description": "Date and time the note was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+					"format": "date-time",
+					"default": ""
+			}
+		}
+	}
