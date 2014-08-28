@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Song Schema",
+    "description": "The Song Archetype - Essential properties that define a song",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title, artist, song_audio"],
+    "properties": {
+    		"title": {
+					"type": "string",
+					"description": "Title of the song",
+					"maxLength": 140,
+					"default": ""
+			},
+			"artist": {
+					"type": "string",
+					"description": "Creator of the song",
+					"maxLength": 140,
+					"default": ""
+			},
+			"song_audio": {
+					"type": "string",
+					"description": "URL to audio file of song",
+					"format": "uri",
+					"maxLength": 1000,
+					"default": ""
+			},
+			"album": {
+					"type": "string",
+					"description": "Album containing the song",
+					"maxLength": 140,
+					"default": ""
+			},
+			"cover_image": {
+					"type": "string",
+					"description": "Image Archetype ID to use as the cover image of this song",
+					"maxLength": 50,
+					"default": ""
+			},
+			"category": {
+					"type": "string",
+					"description": "General category of the song, e.g. EDM",
+					"maxLength": 40,
+					"default": ""
+			},
+			"subcategory": {
+					"type": "string",
+					"description": "Specific category of the song, e.g. Trance",
+					"maxLength": 40,
+					"default": ""
+			},
+			"publish_date": {
+					"type": "string",
+					"description": "Date and time of publication in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+					"format": "date-time",
+					"default": ""
+			},
+			"artist_info": {
+					"type": "string",
+					"description": "URL to the artist's website",
+					"format": "uri",
+					"maxLength": 1000,
+					"default": ""
+			},
+			"tags": {
+					"type": "array",
+					"maxItems": 6,
+					"uniqueItems": true,
+					"default": [],
+					"items": {
+							"type": "string",
+							"maxLength": 30,
+							"default": ""
+					}
+			},
+			"draft": {
+					"type": "boolean",
+					"description": "Is the Archetype instance in draft mode or published",
+					"default": false
+			},
+			"updated": {
+					"type": "string",
+					"description": "Date and time the song was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+					"format": "date-time",
+					"default": ""
+			}
+		}
+	}
+			
