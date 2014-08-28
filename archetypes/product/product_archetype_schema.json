@@ -25,6 +25,12 @@
 			"maxLength": 70,
 			"default": ""
 		},
+		"_id": {
+			"type": "string",
+			"description": "Unique identifier for this product",
+			"maxLength": 50,
+			"default": ""
+		},
 		"category": {
 			"type": "string",
 			"description": "General category of the product, e.g. Clothing",
