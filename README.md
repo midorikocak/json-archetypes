@@ -1,4 +1,3 @@
-----------
 #JSON Archetypes
 
 ###Open-Source JSON Models For Popular Types Of Data.
