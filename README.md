@@ -19,7 +19,7 @@ Each JSON Archetype uses the [JSON Schema](http://json-schema.org "http://json-s
  
 **Feel free to contribute to the existing JSON Archetypes or create your own!**
 
----
+
 ##Contributing
 Anyone who has a JSON Archetype in mind, or wants to add to existing JSON Archetypes is free to contribute.  Just follow these steps:
 
