@@ -38,7 +38,7 @@ More on how to contribute to a Github project [here](https://guides.github.com/a
 
 
 ##F.A.Q.
-###How Is This Different From Schema.org?
+###How is this different from Schema.org?
 Archetypes are more limited versions of the schemas on schema.org.  Servant lets Users host and manage their data, not the Applications they use.  While application developers can comprehend [the verbose, nested data architecture Schema.org uses](http://schema.org/docs/full.html "http://schema.org/docs/full.html"), common people can’t, and they shouldn't have to.  Servant’s goal is to make it easier for anyone to create, manage and retain control of their data.  We arrived at these simpler schemas to support that goal.  
 
 That said, we’ve tried to copy schema.org schemas, as well as their property names, so there will be interoperability.  Hopefully we can evolve to further resemble shcema.org in the future, but right now, our priority is to keep data ridiculously simple, and not just so regular people can comprehend and manage it themselves, but because it's just more fun and easy for developers to build apps with.
