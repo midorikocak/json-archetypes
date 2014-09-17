@@ -6,6 +6,12 @@
 	"additionalProperties": false,
 	"required": ["title, body"],
 	"properties": {
+		"_id": {
+			"type": "string",
+			"description": "Unique identifier for this blog post",
+			"maxLength": 50,
+			"default": ""
+		},
 		"title": {
 			"type": "string",
 			"description": "Title of the blog post",
@@ -24,7 +30,7 @@
 			"maxLength": 140,
 			"default": ""
 		},
-		"author profile": {
+		"author_info": {
 			"type": "string",
 			"description": "Link to the author's profile",
 			"format": "uri",
@@ -70,17 +76,13 @@
 				"default": ""
 			}
 		},
-		"embedded_video": {
-			"type": "string",
-			"description": "URL to a video",
-			"format": "uri",
-			"default": ""
+		"video_archtype": {
+			"$ref": "video_archetype_schema.json",
+			"description": "Video Archetype ID to use as the video of this blog post"
 		},
 		"thumbnail_image_archetype": {
-			"type": "string",
+			"$ref": "image_archetype_schema.json",
 			"description": "Image Archetype ID to use as the thumbnail image of this blog post",
-			"maxLength": 50,
-			"default": ""
 		},
 		"image_archetypes": {
 			"type": "array",
@@ -90,11 +92,14 @@
 			"default": [],
 			"maxItems": 15,
 			"items": {
-				"type": "string",
-				"description": "Image Archetype ID",
-				"maxLength": 50,
-				"default": ""
+				"$ref": "image_archetype_schema.json"
 			}
+		},
+		"created": {
+			"type": "string",
+			"description": "Date and time the blog post was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
+			"default": ""
 		},
 		"updated": {
 			"type": "string",

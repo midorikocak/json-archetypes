@@ -6,6 +6,12 @@
 	"additionalProperties": false,
 	"required": ["title, price, seller"],
 	"properties": {
+		"_id": {
+			"type": "string",
+			"description": "Unique identifier for this special deal",
+			"maxLength": 50,
+			"default": ""
+		},
 		"title": {
 			"type": "string",
 			"description": "Title of the special deal",
@@ -63,59 +69,60 @@
 			"format": "date-time",
 			"default": ""
 		},
-		"seller_profile"
-		"type": "string",
-		"description": "URL to seller or organization's website",
-		"format": "uri",
-		"default": ""
-	},
-	"tags": {
-		"type": "array",
-		"maxItems": 6,
-		"uniqueItems": true,
-		"default": [],
-		"items": {
+		"seller_profile": {
 			"type": "string",
-			"maxLength": 30,
+			"description": "URL to seller or organization's website",
+			"format": "uri",
+			"default": ""
+		},
+		"tags": {
+			"type": "array",
+			"maxItems": 6,
+			"uniqueItems": true,
+			"default": [],
+			"items": {
+				"type": "string",
+				"maxLength": 30,
+				"default": ""
+			}
+		},
+		"audience": {
+			"type": "array",
+			"maxItems": 4,
+			"uniqueItems": true,
+			"default": [],
+			"items": {
+				"type": "string",
+				"maxLength": 30,
+				"default": ""
+			}
+		},
+		"primary_image_archetype": {
+			"$ref": "image_archetype_schema.json",
+			"description": "Image Archetype ID to use as the primary image of this special deal",
+		},
+		"image_archetypes": {
+			"type": "array",
+			"description": "Array of Image Archetype IDs",
+			"uniqueItems": true,
+			"additionalItems": false,
+			"default": [],
+			"maxItems": 15,
+			"items": {
+				"$ref": "image_archetype_schema.json"
+			}
+		},
+		"created": {
+			"type": "string",
+			"description": "Date and time the special deal was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
+			"default": ""
+		},
+		"updated": {
+			"type": "string",
+			"description": "Date and time the special deal was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
 			"default": ""
 		}
-	},
-	"audience": {
-		"type": "array",
-		"maxItems": 4,
-		"uniqueItems": true,
-		"default": [],
-		"items": {
-			"type": "string",
-			"maxLength": 30,
-			"default": ""
-		}
-	},
-	"primary_image_archetype": {
-		"type": "string",
-		"description": "Image Archetype ID to use as the primary image of this special deal",
-		"maxLength": 50,
-		"default": ""
-	},
-	"image_archetypes": {
-		"type": "array",
-		"description": "Array of Image Archetype IDs",
-		"uniqueItems": true,
-		"additionalItems": false,
-		"default": [],
-		"maxItems": 15,
-		"items": {
-			"type": "string",
-			"description": "Image Archetype ID",
-			"maxLength": 50,
-			"default": ""
-		}
-	},
-	"updated": {
-		"type": "string",
-		"description": "Date and time the special deal was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
-		"format": "date-time",
-		"default": ""
 	}
-}
 }
