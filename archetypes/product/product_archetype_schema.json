@@ -56,7 +56,8 @@
 		},
 		"primary_image_archetype": {
 			"$ref": "image_archetype_schema.json",
-			"description": "Image Archetype to use as the primary image of this product"
+			"description": "Image Archetype to use as the primary image of this product",
+			"default": ""
 		},
 		"image_archetypes": {
 			"type": "array",
