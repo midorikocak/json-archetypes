@@ -4,8 +4,14 @@
 	"description": "The Song Archetype - Essential properties that define a song",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["title, artist, song_audio"],
+	"required": ["title, artist, primary_audio_archetype"],
 	"properties": {
+		"_id": {
+			"type": "string",
+			"description": "Unique identifier for this song",
+			"maxLength": 50,
+			"default": ""
+		},
 		"title": {
 			"type": "string",
 			"description": "Title of the song",
@@ -18,12 +24,9 @@
 			"maxLength": 140,
 			"default": ""
 		},
-		"song_audio": {
-			"type": "string",
-			"description": "URL to audio file of song",
-			"format": "uri",
-			"maxLength": 1000,
-			"default": ""
+		"primary_audio_archetype": {
+			"$ref": "audio_archetype_schema.json",
+			"description": "Audio Archetype ID to use as the audio file of the song",
 		},
 		"album": {
 			"type": "string",
@@ -32,10 +35,8 @@
 			"default": ""
 		},
 		"cover_image": {
-			"type": "string",
+			"$ref": "image_archetype_schema.json",
 			"description": "Image Archetype ID to use as the cover image of this song",
-			"maxLength": 50,
-			"default": ""
 		},
 		"category": {
 			"type": "string",
@@ -72,6 +73,12 @@
 				"maxLength": 30,
 				"default": ""
 			}
+		},
+		"created": {
+			"type": "string",
+			"description": "Date and time the song was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
+			"default": ""
 		},
 		"updated": {
 			"type": "string",
