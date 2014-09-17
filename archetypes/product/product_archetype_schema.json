@@ -4,7 +4,7 @@
 	"description": "The Product Archetype - Essential properties that define a product",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["title", "price", "seller"],
+	"required": ["name", "price", "seller"],
 	"properties": {
 		"name": {
 			"type": "string",
