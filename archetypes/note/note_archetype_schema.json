@@ -6,6 +6,12 @@
 	"additionalProperties": false,
 	"required": ["body"],
 	"properties": {
+		"_id": {
+			"type": "string",
+			"description": "Unique identifier for this note",
+			"maxLength": 50,
+			"default": ""
+		},
 		"body": {
 			"type": "string",
 			"description": "Main text of the note",
@@ -55,10 +61,7 @@
 			"default": [],
 			"maxItems": 15,
 			"items": {
-				"type": "string",
-				"description": "Image Archetype ID",
-				"maxLength": 50,
-				"default": ""
+				"$ref": "image_archetype_schema.json"
 			}
 		},
 		"video_archetypes": {
@@ -69,11 +72,25 @@
 			"default": [],
 			"maxItems": 15,
 			"items": {
-				"type": "string",
-				"description": "Video Archetype ID",
-				"maxLength": 50,
-				"default": ""
+				"$ref": "video_archetype_schema.json"
 			}
+		},
+		"audio_archetypes": {
+			"type": "array",
+			"description": "Array of Audio Archetype IDs",
+			"uniqueItems": true,
+			"additionalItems": false,
+			"default": [],
+			"maxItems": 15,
+			"items": {
+				"$ref": "audio_archetype_schema.json"
+			}
+		},
+		"created": {
+			"type": "string",
+			"description": "Date and time the note was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
+			"default": ""
 		},
 		"updated": {
 			"type": "string",

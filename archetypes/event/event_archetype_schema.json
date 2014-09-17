@@ -6,6 +6,12 @@
 	"additionalProperties": false,
 	"required": ["title, start_date"],
 	"properties": {
+		"_id": {
+			"type": "string",
+			"description": "Unique identifier for this event",
+			"maxLength": 50,
+			"default": ""
+		},
 		"title": {
 			"type": "string",
 			"description": "Title of the event",
@@ -58,10 +64,8 @@
 			"default": "GMT"
 		},
 		"event_logo": {
-			"type": "string",
+			"$ref": "image_archetype_schema.json",
 			"description": "Image Archetype ID to use as the event logo of this event",
-			"maxLength": 50,
-			"default": ""
 		},
 		"description": {
 			"type": "string",
@@ -139,6 +143,12 @@
 				"maxLength": 30,
 				"default": ""
 			}
+		},
+		"created": {
+			"type": "string",
+			"description": "Date and time the event was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+			"format": "date-time",
+			"default": ""
 		},
 		"updated": {
 			"type": "string",
