@@ -47,6 +47,18 @@
 			"maxLength": 1000,
 			"default": ""
 		},
+		"bytes": {
+			"type": "integer",
+			"description": "Image size in bytes",
+			"minimum": 0,
+			"maximum": 999999999999999999999999999,
+			"default": 0
+		},
+		"format": {
+			"type": "string",
+			"description": "Image file type ('jpg','png','gif')",
+			"enum": ["jpg", "jpeg", "png", "gif"],
+		},
 		"created": {
 			"type": "string",
 			"description": "Date and time the product was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
