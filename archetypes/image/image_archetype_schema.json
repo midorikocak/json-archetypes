@@ -57,7 +57,7 @@
 		"format": {
 			"type": "string",
 			"description": "Image file type ('jpg','png','gif')",
-			"enum": ["jpg", "jpeg", "png", "gif"],
+			"enum": ["jpg", "jpeg", "png", "gif"]
 		},
 		"created": {
 			"type": "string",
