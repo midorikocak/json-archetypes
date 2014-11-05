@@ -1,4 +1,4 @@
-![](https://github.com/servant-cmes/json-archetypes/blob/master/json_archetypes_logo.png)
+![](https://github.com/servant-cmes/json-archetypes/blob/master/json_archetypes_banner.png)
 
 #JSON Archetypes
 
