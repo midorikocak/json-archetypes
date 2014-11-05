@@ -2,12 +2,15 @@
 
 ###Open-Source JSON Models For Popular Types Of Data.
 
-These are simple JSON Models for popular types of data.  They are standards so they have consistent properties and they never change shape.   This allows Developers to easily build applications that know how to handle them, and users can now use the same set of data across multiple applications.  These were created to work with [Servant](http://servant.co "http://servant.co"), which allows users to host their own records of Archetypes in the cloud, and instantly port them into any application that can read them.
+**Because most apps make the same kinds of data over and over again.**
 
-***STATUS: This is currently a work in progress.  We are waiting to recieve feedback on these before launching JSON Archetypes Version 1***
+***STATUS: This is currently a work in progress.  We are waiting to receive feedback from more people before launching JSON Archetypes Version 1***
 
+Consistent data objects allow Developers to easily build applications that know how to handle them, and allow users to use the same set of data across multiple applications.  
 
-Each JSON Archetype uses the [JSON Schema](http://json-schema.org "http://json-schema.org") format to describe the Archetype and its validation rules.  All of the Archetypes can be found in the `archetypes` folder.  JSON Archetypes focus on are meant to be lean and contain only the essential properties/attributes that define and differentiate types of data.  The challenge is to agree on what those properties/attributes are...
+Each JSON Archetype uses the [JSON Schema](http://json-schema.org "http://json-schema.org") format to describe the Archetype and its validation rules.  All of the Archetypes can be found in the `archetypes` folder.  JSON Archetypes are meant to be lean and contain only the essential properties/attributes that define and differentiate each archetype.  The challenge is to agree on what those properties/attributes are...
+
+These were created to work with [Servant](httsp://www.servant.co "http://servant.co"), which allows people to host their own data (in these formats), instead of the applications they use hosting it. 
 
 **This Repo contains the following:**
 
@@ -29,7 +32,7 @@ Anyone who has a JSON Archetype in mind, or wants to add to existing JSON Archet
 
 More on how to contribute to a Github project [here](https://guides.github.com/activities/contributing-to-open-source/).
 
-##Architecture Guidelines
+##Architecture Principles
 
  - **Shallow Architecture -**  Don't add nested objects.  Only Arrays are allowed, and if they contain objects, keep those objects small.  Shallow architecture makes the Archetypes more accessible using simpler queries that can be effectively indexed to scale well.
  - **Unique Property Names -** Every property name in an Archetype must be unique.
@@ -39,22 +42,19 @@ More on how to contribute to a Github project [here](https://guides.github.com/a
 
 ##F.A.Q.
 ###How is this different from Schema.org?
-Archetypes are more limited versions of the schemas on schema.org.  Servant lets Users host and manage their data, not the Applications they use.  While application developers can comprehend [the verbose, nested data architecture Schema.org uses](http://schema.org/docs/full.html "http://schema.org/docs/full.html"), common people can’t, and they shouldn't have to.  Servant’s goal is to make it easier for anyone to create, manage and retain control of their data.  We arrived at these simpler schemas to support that goal.  
+JSON Archetypes are more limited versions of the schemas on schema.org.  While application developers can comprehend [the verbose, nested data architecture Schema.org uses](http://schema.org/docs/full.html "http://schema.org/docs/full.html"), common people can’t, and they shouldn't have to.  [Servant’s](https://www.servant.co) goal is to make it easier for anyone to create, manage and retain control of their data.  We arrived at these simpler schemas to support that goal.  
 
-That said, we’ve tried to copy schema.org schemas, as well as their property names, so there will be interoperability.  Hopefully we can evolve to further resemble shcema.org in the future, but right now, our priority is to keep data ridiculously simple, and not just so regular people can comprehend and manage it themselves, but because it's just more fun and easy for developers to build apps with.
+That said, we’ve tried to copy schema.org schemas, as well as their property names, so there will be interoperability.  Hopefully we can evolve to further resemble schema.org in the future, but right now, our priority is to keep the data simple, and not just so regular people can comprehend and manage it themselves, but because it's more fun and easy for developers to build apps with.
 
 ###Can I add additional properties to the Archetypes?
-Yes, but do it in your own application.  99% of the time, developers want to put properties on the Archetypes that are only relevant to the applications they want to make.  Nothing wrong with that.  Just make a meta or extender object for each Archetype and save it in your application’s own database.  There are infinite use-cases for the Archetypes, and if we attached properties for each we’d have infinite bloat. 
+Yes, but do it in your own application.  99% of the time, developers want to put properties on the Archetypes that are only relevant to the applications they want to make.  Nothing wrong with that.  Most people make **meta** objects for each Archetype and save them in their application’s own database.  There are infinite use-cases for the Archetypes, and if we attached properties for each we’d have infinite bloat. 
 
 Otherwise, if you think the property is absolutely necessary, contribute to this repo :)
+
 ###As a User, how can I store extra data in each Archetype (e.g. obscure product details)?
 Archetypes aren't going to be perfect for everyone.  But don't let the perfect be the enemy of good.  
 
-Occasionally, you may not be able to find room to squeeze in obscure details.  On the other hand, JSON Archetypes radically increase distribution and productivity of your data.  
+Occasionally, you may not be able to find room to squeeze in obscure details.  On the other hand, JSON Archetypes radically increase distribution and productivity of your data.  Yes, you may miss a small detail, but more importantly, you will be able to show and use your data EVERYWHERE.
 
-Yes, you may miss a small detail, but more importantly, you will be able to show and use your data EVERYWHERE.
-
-###Bro, I just found [this comic on XKCD](http://xkcd.com/927/) and it’s totally relevant.  Can I show it to you?
+###Bro, I found [this comic on XKCD](http://xkcd.com/927/) and it’s totally relevant.  Can I show it to you?
 No.
-
-
