@@ -4,7 +4,7 @@
 
 ###Open-Source JSON Models For Popular Types Of Data.
 
-**Because most apps make the same kinds of data over and over again.**
+Because most apps make the same kinds of data over and over again.
 
 ***STATUS: This is currently a work in progress.  We are waiting to receive feedback from more people before launching JSON Archetypes Version 1***
 
@@ -12,7 +12,7 @@ Consistent data objects allow Developers to easily build applications that know 
 
 Each JSON Archetype uses the [JSON Schema](http://json-schema.org "http://json-schema.org") format to describe the Archetype and its validation rules.  All of the Archetypes can be found in the `archetypes` folder.  JSON Archetypes are meant to be lean and contain only the essential properties/attributes that define and differentiate each archetype.  The challenge is to agree on what those properties/attributes are...
 
-These were created to work with [Servant](httsp://www.servant.co "http://servant.co"), which allows people to host their own data (in these formats), instead of the applications they use hosting it. 
+These were created to work with [Servant](https://www.servant.co "http://servant.co"), which allows people to host their own data (in these formats), instead of the applications they use hosting it. 
 
 **This Repo contains the following:**
 
