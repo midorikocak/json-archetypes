@@ -1,3 +1,5 @@
+![](https://github.com/servant-cmes/json-archetypes/blob/master/json_archetypes_logo.png)
+
 #JSON Archetypes
 
 ###Open-Source JSON Models For Popular Types Of Data.
