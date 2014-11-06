@@ -2,7 +2,7 @@
 
 #JSON Archetypes
 
-###Open-Source JSON Models For Popular Types Of Data.
+###Open-Source JSON Standards For Popular Types Of Data.
 
 Because most apps make the same kinds of data over and over again.
 
