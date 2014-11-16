@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Tiny Text Schema",
+    "description": "The Tiny Text Archetype - Essential properties that define Tiny Text",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["body"],
+    "properties": {
+        "_id": {
+            "type": "string",
+            "description": "Unique identifier for this Tiny Text entry",
+            "maxLength": 50,
+            "default": ""
+        },
+        "body": {
+            "type": "string",
+            "description": "The main text of the Tiny Text entry",
+            "maxLength": 140,
+            "default": ""
+        },
+        "image_archetype": {
+            "$ref": "image_archetype_schema.json",
+            "description": "Image Archetype ID to use as the image of this Tiny Text entry",
+        },
+        "created": {
+            "type": "string",
+            "description": "Date and time the Tiny Text entry was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
+            "default": ""
+        },
+        "updated": {
+            "type": "string",
+            "description": "Date and time the Tiny Text entry was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
+            "default": ""
+        }
+    }
+}
