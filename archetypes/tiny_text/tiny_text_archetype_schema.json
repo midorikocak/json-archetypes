@@ -20,7 +20,7 @@
         },
         "image_archetype": {
             "$ref": "image_archetype_schema.json",
-            "description": "Image Archetype ID to use as the image of this Tiny Text entry",
+            "description": "Image Archetype ID to use as the image of this Tiny Text entry"
         },
         "created": {
             "type": "string",
