@@ -6,7 +6,7 @@
 
 The point of the Archetypes is to agree on data models that are easy and fun to develop applications with.  That is all.
 
-**Status: Waiting to receive feedback from more people before launching JSON Archetypes Version 1**
+*Status: Waiting to receive feedback from more people before launching JSON Archetypes Version 1*
 
 These are part of [Servant](https://www.servant.co).  Servant is cloud storage for the Archetypes.  If you build an application using Archetypes, you can use Servant as your database, and Servant will pay you for each API Request you make to it.   [More info on that here.](https://developers.servant.co)
 
@@ -53,4 +53,3 @@ Occasionally, you may not be able to find room to squeeze in obscure details.  O
 
 ###Bro, I found [this comic on XKCD](http://xkcd.com/927/) and it’s totally relevant.  Can I show it to you?
 We've already seen it, laughed, and moved forward.
-
