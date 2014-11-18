@@ -2,7 +2,7 @@
 
 #JSON Archetypes
 
-###Community-Driven JSON Standards For Popular Types Of Data.
+####Community-Driven Standards For Popular Types Of Data in JSON
 
 The point of the Archetypes is to agree on data models that are easy and fun to develop applications with.  That is all.
 
@@ -37,7 +37,7 @@ More on how to contribute to a Github project [here](https://guides.github.com/a
 
 ##F.A.Q.
 ###How is this different from Schema.org?
-JSON Archetypes are simpler versions of the schemas on schema.org.  While application developers can comprehend [the verbose, nested data architecture Schema.org uses](http://schema.org/docs/full.html "http://schema.org/docs/full.html"), they are still complex and not much fun to work with.
+JSON Archetypes are simpler versions of the schemas on schema.org.  While application developers can comprehend [the verbose, nested data architecture Schema.org uses](http://schema.org/docs/full.html "http://schema.org/docs/full.html"), it's still complex and not much fun to work with.
 
 That said, we’ve tried to copy schema.org schemas wherever possible, as well as their property names, so there will be interoperability.  Hopefully we can evolve to further resemble schema.org in the future.
 
