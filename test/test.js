@@ -183,8 +183,8 @@ test('****** Test Task Archetype Schema', function(t) {
 /**
  * Test Tiny Text  Archetype
  */
-test('****** Test Tiny Text Archetype Schema', function(t) {
-    validator.validateSchema(JATs.archetypes.tiny_text, function(err, report) {
+test('****** Test TinyText Archetype Schema', function(t) {
+    validator.validateSchema(JATs.archetypes.tinytext, function(err, report) {
         console.log(err, report)
         t.equal(report.valid, true, 'Schema is valid per JSON Schema v4');
         t.end();

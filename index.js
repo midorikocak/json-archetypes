@@ -22,7 +22,7 @@ archetypes.review = require('./archetypes/review/review_archetype_schema');
 archetypes.song = require('./archetypes/song/song_archetype_schema');
 archetypes.special_deal = require('./archetypes/special_deal/special_deal_archetype_schema');
 archetypes.task = require('./archetypes/task/task_archetype_schema');
-archetypes.tiny_text = require('./archetypes/tiny_text/tiny_text_archetype_schema');
+archetypes.tinytext = require('./archetypes/tinytext/tinytext_archetype_schema');
 
 // Export
 module.exports.archetypes = archetypes;
