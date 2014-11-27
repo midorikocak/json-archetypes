@@ -1,12 +1,12 @@
 {
   "name": "json-archetypes",
   "author": "Austen Collins",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Open-source JSON Models For Popular Types Of Data",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/servant-cmes/json-archetypes.git"
+    "url": "git://github.com/servant-app/json-archetypes.git"
   },
   "keywords": [
     "json",
@@ -21,7 +21,7 @@
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/servant-cmes/json-archetypes/issues"
+    "url": "https://github.com/servant-app/json-archetypes/issues"
   },
   "scripts": {
     "test": "node ./test/test.js | tap-spec"
