@@ -8,8 +8,25 @@
     "properties": {
         "_id": {
             "type": "string",
-            "description": "Unique identifier for this Tiny Text entry",
+            "description": "Unique identifier for this archetype record",
             "maxLength": 50,
+            "default": ""
+        },
+        "draft": {
+            "type": "boolean",
+            "description": "Indicates this archetype record is a draft and is not published",
+            "default": false
+        },
+        "created": {
+            "type": "string",
+            "description": "Date and time this archetype record was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
+            "default": ""
+        },
+        "updated": {
+            "type": "string",
+            "description": "Date and time this archetype record was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
             "default": ""
         },
         "body": {
@@ -21,18 +38,6 @@
         "image_archetype": {
             "$ref": "image_archetype_schema.json",
             "description": "Image Archetype ID to use as the image of this Tiny Text entry"
-        },
-        "created": {
-            "type": "string",
-            "description": "Date and time the Tiny Text entry was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
-            "format": "date-time",
-            "default": ""
-        },
-        "updated": {
-            "type": "string",
-            "description": "Date and time the Tiny Text entry was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
-            "format": "date-time",
-            "default": ""
         }
     }
 }

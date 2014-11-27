@@ -4,12 +4,28 @@
     "description": "The Person Archetype - Essential properties that define a Person",
     "type": "object",
     "additionalProperties": false,
-    "required": [],
     "properties": {
         "_id": {
             "type": "string",
-            "description": "Unique identifier for this person",
+            "description": "Unique identifier for this archetype record",
             "maxLength": 50,
+            "default": ""
+        },
+        "draft": {
+            "type": "boolean",
+            "description": "Indicates this archetype record is a draft and is not published",
+            "default": false
+        },
+        "created": {
+            "type": "string",
+            "description": "Date and time this archetype record was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
+            "default": ""
+        },
+        "updated": {
+            "type": "string",
+            "description": "Date and time this archetype record was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
             "default": ""
         },
         "full_name": {
@@ -151,18 +167,6 @@
         "birthday": {
             "type": "string",
             "description": "Birthday of person in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
-            "format": "date-time",
-            "default": ""
-        },
-        "created": {
-            "type": "string",
-            "description": "Date and time the entry was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
-            "format": "date-time",
-            "default": ""
-        },
-        "updated": {
-            "type": "string",
-            "description": "Date and time the entry was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
             "format": "date-time",
             "default": ""
         }
