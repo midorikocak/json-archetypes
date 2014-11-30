@@ -35,7 +35,7 @@
             "maxLength": 140,
             "default": ""
         },
-        "image_archetype": {
+        "image": {
             "$ref": "image_archetype_schema.json",
             "description": "Image Archetype ID to use as the image of this TinyText entry"
         }
