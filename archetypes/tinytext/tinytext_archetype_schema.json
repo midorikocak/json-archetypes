@@ -37,7 +37,8 @@
         },
         "image": {
             "$ref": "image_archetype_schema.json",
-            "description": "Image Archetype ID to use as the image of this TinyText entry"
+            "default": "",
+            "description": "Include an Image Archetype to use with this Tiny Text"
         }
     }
 }
