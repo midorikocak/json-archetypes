@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Person Schema",
-    "description": "The Person Archetype - Essential properties that define a Person",
+    "title": "Contact Schema",
+    "description": "The Contact Archetype - Essential properties that define a Contact",
     "type": "object",
     "additionalProperties": false,
     "properties": {
@@ -30,19 +30,19 @@
         },
         "full_name": {
             "type": "string",
-            "description": "Full name of the person",
+            "description": "Full name of the contact",
             "maxLength": 50,
             "default": ""
         },
         "nick_name": {
             "type": "string",
-            "description": "Nick name of the person",
+            "description": "Nick name of the contact",
             "maxLength": 50,
             "default": ""
         },
         "email_addresses": {
             "type": "array",
-            "description": "Email addresses associated with this person",
+            "description": "Email addresses associated with this contact",
             "uniqueItems": true,
             "additionalItems": false,
             "maxItems": 10,
@@ -68,7 +68,7 @@
         },
         "phone_numbers": {
             "type": "array",
-            "description": "Phone numbers associated with this person",
+            "description": "Phone numbers associated with this contact",
             "uniqueItems": true,
             "additionalItems": false,
             "maxItems": 10,
@@ -94,7 +94,7 @@
         },
         "addresses": {
             "type": "array",
-            "description": "Addresses associated with this person",
+            "description": "Addresses associated with this contact",
             "uniqueItems": true,
             "additionalItems": false,
             "maxItems": 10,
@@ -111,19 +111,19 @@
                     },
                     "address_street": {
                         "type": "string",
-                        "description": "The street address where the person is located.",
+                        "description": "The street address where the contact is located.",
                         "maxLength": 100,
                         "default": ""
                     },
                     "address_locality": {
                         "type": "string",
-                        "description": "The city or town where the person is located.",
+                        "description": "The city or town where the contact is located.",
                         "maxLength": 100,
                         "default": ""
                     },
                     "address_region": {
                         "type": "string",
-                        "description": "The general region where the person is located.  Can be a US state, or a province, for instance.",
+                        "description": "The general region where the contact is located.  Can be a US state, or a province, for instance.",
                         "maxLength": 100,
                         "default": ""
                     },
@@ -143,19 +143,19 @@
         },
         "category": {
             "type": "string",
-            "description": "General category of the person, e.g. Friends, Family, etc.",
+            "description": "General category of the contact, e.g. Friends, Family, etc.",
             "maxLength": 40,
             "default": ""
         },
         "subcategory": {
             "type": "string",
-            "description": "Specific category of the person, e.g. Best Friends, Parent, etc",
+            "description": "Specific category of the contact, e.g. Best Friends, Parent, etc",
             "maxLength": 40,
             "default": ""
         },
         "images": {
             "type": "array",
-            "description": "Array of Image Archetypes related to this person",
+            "description": "Array of Image Archetypes related to this contact",
             "uniqueItems": true,
             "additionalItems": false,
             "default": [],
@@ -166,7 +166,7 @@
         },
         "birthday": {
             "type": "string",
-            "description": "Birthday of person in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "description": "Birthday of contact in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
             "format": "date-time",
             "default": ""
         }
