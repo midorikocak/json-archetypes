@@ -163,12 +163,6 @@
             "items": {
                 "$ref": "image_archetype_schema.json"
             }
-        },
-        "birthday": {
-            "type": "string",
-            "description": "Birthday of contact in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
-            "format": "date-time",
-            "default": ""
         }
     }
 }
