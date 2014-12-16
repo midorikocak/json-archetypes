@@ -163,6 +163,17 @@
             "items": {
                 "$ref": "image_archetype_schema.json"
             }
+        }, 
+        "tags": {
+            "type": "array",
+            "maxItems": 8,
+            "uniqueItems": true,
+            "default": [],
+            "items": {
+                "type": "string",
+                "maxLength": 30,
+                "default": ""
+            }
         }
     }
 }
