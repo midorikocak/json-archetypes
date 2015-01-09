@@ -94,16 +94,16 @@
 			}
 		},
 		"tags": {
-			"type": "array",
-			"maxItems": 6,
-			"uniqueItems": true,
-			"default": [],
-			"items": {
-				"type": "string",
-				"maxLength": 30,
-				"default": ""
-			}
-		},
+            "type": "array",
+            "description": "Array of Tag Archetypes that are used to help categorize this Archetype record",
+            "maxItems": 6,
+            "uniqueItems": true,
+            "additionalItems": false,
+            "default": [],
+            "items": {
+                "$ref": "tag_archetype_schema.json"
+            }
+        },
 		"audience": {
 			"type": "array",
 			"maxItems": 4,
