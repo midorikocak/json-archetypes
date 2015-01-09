@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Tag Schema",
+    "description": "The Tag Archetype - Essential properties that define a Tag",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["tag"],
+    "properties": {
+        "_id": {
+            "type": "string",
+            "description": "Unique identifier for this archetype record",
+            "maxLength": 50,
+            "default": ""
+        },
+        "draft": {
+            "type": "boolean",
+            "description": "Indicates this archetype record is a draft and is not published",
+            "default": false
+        },
+        "created": {
+            "type": "string",
+            "description": "Date and time this archetype record was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
+            "default": ""
+        },
+        "updated": {
+            "type": "string",
+            "description": "Date and time this archetype record was updated in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
+            "format": "date-time",
+            "default": ""
+        },
+        "tag": {
+            "type": "string",
+            "description": "The text of the tag entry",
+            "maxLength": 140,
+            "default": ""
+        }
+    }
+}

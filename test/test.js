@@ -170,6 +170,17 @@ test('****** Test Special Deal Archetype Schema', function(t) {
 });
 
 /**
+ * Test Tag Archetype
+ */
+test('****** Test Tag Archetype Schema', function(t) {
+    validator.validateSchema(JATs.archetypes.tag, function(err, report) {
+        console.log(err, report);
+        t.equal(report.valid, true, 'Schema is valid per JSON Schema v4');
+        t.end();
+    });
+});
+
+/**
  * Test Task Archetype
  */
 test('****** Test Task Archetype Schema', function(t) {
