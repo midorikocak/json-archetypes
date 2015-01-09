@@ -105,16 +105,16 @@
             }
         },
 		"audience": {
-			"type": "array",
-			"maxItems": 4,
-			"uniqueItems": true,
-			"default": [],
-			"items": {
-				"type": "string",
-				"maxLength": 30,
-				"default": ""
-			}
-		},
+            "type": "array",
+            "description": "Array of Tag Archetypes that are used to help categorize this product's audience (e.g. Men, Women, Children)",
+            "maxItems": 6,
+            "uniqueItems": true,
+            "additionalItems": false,
+            "default": [],
+            "items": {
+                "$ref": "tag_archetype_schema.json"
+            }
+        },
 		"brand": {
 			"type": "string",
 			"description": "Brand of the product",
