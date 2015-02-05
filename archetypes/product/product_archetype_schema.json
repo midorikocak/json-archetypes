@@ -107,7 +107,7 @@
 		"audience": {
             "type": "array",
             "description": "Array of Tag Archetypes that are used to help categorize this product's audience (e.g. Men, Women, Children)",
-            "maxItems": 6,
+            "maxItems": 10,
             "uniqueItems": true,
             "additionalItems": false,
             "default": [],
