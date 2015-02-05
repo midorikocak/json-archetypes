@@ -37,23 +37,16 @@
             "maxLength": 250,
             "default": ""
         },
-        "body": {
+        "html": {
             "type": "string",
             "description": "Main text of the blog post",
             "maxLength": 20000,
             "default": ""
         },
         "author": {
-            "type": "string",
-            "description": "Name of the author",
-            "maxLength": 140,
-            "default": ""
-        },
-        "author_info": {
-            "type": "string",
-            "description": "Link to the author's profile",
-            "format": "uri",
-            "default": ""
+            "$ref": "contact_archetype_schema.json",
+            "default": "",
+            "description": "The Contact Archetype Record of the person who authored this post"
         },
         "category": {
             "type": "string",
@@ -87,21 +80,13 @@
         "tags": {
             "type": "array",
             "description": "Array of Tag Archetypes that are used to help categorize this Archetype record",
-            "maxItems": 6,
+            "maxItems": 30,
             "uniqueItems": true,
             "additionalItems": false,
             "default": [],
             "items": {
                 "$ref": "tag_archetype_schema.json"
             }
-        },
-        "video_archtype": {
-            "$ref": "video_archetype_schema.json",
-            "description": "Video Archetype ID to use as the video of this blog post"
-        },
-        "thumbnail_image_archetype": {
-            "$ref": "image_archetype_schema.json",
-            "description": "Image Archetype ID to use as the thumbnail image of this blog post"
         },
         "image_archetypes": {
             "type": "array",
