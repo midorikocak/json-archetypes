@@ -94,7 +94,7 @@
             "uniqueItems": true,
             "additionalItems": false,
             "default": [],
-            "maxItems": 15,
+            "maxItems": 30,
             "items": {
                 "$ref": "image_archetype_schema.json"
             }
