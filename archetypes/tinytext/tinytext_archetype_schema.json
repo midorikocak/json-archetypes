@@ -39,6 +39,17 @@
             "$ref": "image_archetype_schema.json",
             "default": "",
             "description": "Include an Image Archetype to use with this Tiny Text"
+        },
+        "tags": {
+            "type": "array",
+            "description": "Array of Tag Archetypes that are used to help categorize this Archetype record",
+            "maxItems": 30,
+            "uniqueItems": true,
+            "additionalItems": false,
+            "default": [],
+            "items": {
+                "$ref": "tag_archetype_schema.json"
+            }
         }
     }
 }
