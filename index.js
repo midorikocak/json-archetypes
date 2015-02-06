@@ -1,5 +1,6 @@
 /**
- *  JSON Archetypes – JSON standards for common types of data
+ *  JSON Archetypes – JSON standards for common types of data.
+ *  By: Austen Collins
  */
 
 
