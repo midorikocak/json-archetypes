@@ -49,17 +49,15 @@
 			"default": ""
 		},
 		"category": {
-			"type": "string",
-			"description": "General category of the product, e.g. Clothing",
-			"maxLength": 40,
-			"default": ""
-		},
-		"subcategory": {
-			"type": "string",
-			"description": "Specific category of the product, e.g. Jeans",
-			"maxLength": 40,
-			"default": ""
-		},
+            "$ref": "tag_archetype_schema.json",
+            "default": "",
+            "description": "A Tag Archetype record to use as this record's category"
+        },
+        "subcategory": {
+            "$ref": "tag_archetype_schema.json",
+            "default": "",
+            "description": "A Tag Archetype record to use as this record's subcategory"
+        },
 		"condition": {
 			"enum": ["new", "refurbished", "used - like new", "used - very good", "used - good", "used - acceptable"],
 			"description": "Condition of the product, e.g. New",

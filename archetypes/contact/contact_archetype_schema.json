@@ -142,16 +142,14 @@
             }
         },
         "category": {
-            "type": "string",
-            "description": "General category of the contact, e.g. Friends, Family, etc.",
-            "maxLength": 40,
-            "default": ""
+            "$ref": "tag_archetype_schema.json",
+            "default": "",
+            "description": "A Tag Archetype record to use as this record's category"
         },
         "subcategory": {
-            "type": "string",
-            "description": "Specific category of the contact, e.g. Best Friends, Parent, etc",
-            "maxLength": 40,
-            "default": ""
+            "$ref": "tag_archetype_schema.json",
+            "default": "",
+            "description": "A Tag Archetype record to use as this record's subcategory"
         },
         "images": {
             "type": "array",
