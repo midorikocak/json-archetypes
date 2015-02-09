@@ -1,36 +1,36 @@
 {
-  "name": "json-archetypes",
-  "author": "Austen Collins",
-  "version": "v0.0.16",
-  "description": "Open-source JSON Models For Popular Types Of Data",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/servant-app/json-archetypes.git"
-  },
-  "keywords": [
-    "json",
-    "schema",
-    "model",
-    "standards",
-    "archetypes",
-    "products",
-    "images",
-    "events",
-    "servant"
-  ],
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/servant-app/json-archetypes/issues"
-  },
-  "scripts": {
-    "test": "node ./test/test.js | tap-spec"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "async": "0.9.0",
-    "tap-spec": "0.2.0",
-    "tape": "2.13.3",
-    "z-schema": "2.4.8"
-  }
+    "name": "json-archetypes",
+    "author": "Austen Collins",
+    "version": "v0.0.17",
+    "description": "Open-source JSON Models For Popular Types Of Data",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/servant-app/json-archetypes.git"
+    },
+    "keywords": [
+        "json",
+        "schema",
+        "model",
+        "standards",
+        "archetypes",
+        "products",
+        "images",
+        "events",
+        "servant"
+    ],
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/servant-app/json-archetypes/issues"
+    },
+    "scripts": {
+        "test": "node ./test/test.js | tap-spec"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "async": "0.9.0",
+        "tap-spec": "0.2.0",
+        "tape": "2.13.3",
+        "z-schema": "2.4.8"
+    }
 }

@@ -5,7 +5,7 @@
     "type": "object",
     "additionalProperties": false,
     "required": [
-        "title, body"
+        "title, html"
     ],
     "properties": {
         "_id": {
