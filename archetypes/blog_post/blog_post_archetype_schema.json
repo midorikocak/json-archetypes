@@ -41,7 +41,7 @@
             "$ref": "contact_archetype_schema.json",
             "default": "",
             "description": "The Contact Archetype Record ID of the person who authored this post"
-        }, 
+        },
         "publish_date": {
             "type": "string",
             "description": "Date and time of publication in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
@@ -50,7 +50,13 @@
         },
         "html": {
             "type": "string",
-            "description": "Main text of the blog post",
+            "description": "Content of the blog post in html format",
+            "maxLength": 40000,
+            "default": ""
+        },
+        "plaintext": {
+            "type": "string",
+            "description": "Content of the blog post in plain text format",
             "maxLength": 40000,
             "default": ""
         },
