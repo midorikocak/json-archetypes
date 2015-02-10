@@ -4,9 +4,6 @@
     "description": "The Blog Post Archetype - Essential properties that define a blog post",
     "type": "object",
     "additionalProperties": false,
-    "required": [
-        "html"
-    ],
     "properties": {
         "_id": {
             "type": "string",
