@@ -36,7 +36,7 @@
         "key": {
             "type": "string",
             "description": "Image file name without file extension (e.g., .png)",
-            "maxLength": 50,
+            "maxLength": 200,
             "default": ""
         },
         "format": {
