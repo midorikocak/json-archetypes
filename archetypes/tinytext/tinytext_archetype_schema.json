@@ -17,6 +17,11 @@
             "description": "Indicates this archetype record is a draft and is not published",
             "default": false
         },
+        "public_access": {
+            "type": "boolean",
+            "description": "Indicates that this record can be read by anyone",
+            "default": false
+        },
         "created": {
             "type": "string",
             "description": "Date and time this archetype record was created in ISO 8601 date standard e.g. YYYY-MM-DDThh:mm:ss.sTZD",
