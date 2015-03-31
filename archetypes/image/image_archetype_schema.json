@@ -4,7 +4,6 @@
     "description": "The Images Archetype - Essential properties that define an image",
     "type": "object",
     "additionalProperties": false,
-    "required": ["resolution_original, resolution_large, resolution_medium, resolution_small"],
     "properties": {
         "_id": {
             "type": "string",
