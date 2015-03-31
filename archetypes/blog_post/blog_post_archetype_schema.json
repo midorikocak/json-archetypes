@@ -19,7 +19,7 @@
         "public_access": {
             "type": "boolean",
             "description": "Indicates that this record can be read by anyone",
-            "default": false
+            "default": true
         },
         "created": {
             "type": "string",
