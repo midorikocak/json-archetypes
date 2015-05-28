@@ -46,4 +46,4 @@ Archetypes aren't going to be perfect for everyone.  But don't let the perfect b
 Occasionally, you may not be able to find room to squeeze in obscure details.  On the other hand, JSON Archetypes radically increase distribution and productivity of your data.  Yes, you may miss a small detail, but more importantly, you will be able to show and use your data EVERYWHERE.
 
 ###Bro, I found [this comic on XKCD](http://xkcd.com/927/) and it’s totally relevant.  Can I show it to you?
-We've already seen it, laughed, and moved forward.
+We've seen it, laughed, and moved forward.
