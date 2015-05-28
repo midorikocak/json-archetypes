@@ -2,7 +2,7 @@
 
 #JSON Archetypes
 
-Simple, community-driven standards for popular types of data in JSON, that is all.
+Simple, community-driven standards for popular types of data in JSON.  That is all.
 
 These were made for [Servant](https://www.servant.co).  Servant is a personal database and these are its schemas.
 
