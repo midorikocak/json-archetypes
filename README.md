@@ -4,13 +4,11 @@
 
 Community-Driven Standards For Popular Types Of Data in JSON, that is all.
 
-*Status: Waiting to receive feedback from more people before launching JSON Archetypes Version 1*
-
-These were made for [Servant](https://www.servant.co).  Servant is a persona database and these are its schemas.
+These were made for [Servant](https://www.servant.co).  Servant is a personal database and these are its schemas.
 
 Each JSON Archetype uses the [JSON Schema](http://json-schema.org "http://json-schema.org") format to describe the Archetype and its validation rules.  All of the Archetypes can be found in the `archetypes` folder.  JSON Archetypes are meant to be lean and contain only the essential properties/attributes that define and differentiate each archetype.  The challenge is to agree on what those properties/attributes are...
  
-**Feel free to contribute to the existing JSON Archetypes or create your own!**
+Feel free to contribute to the existing JSON Archetypes or create your own!
 
 
 ##Contributing
