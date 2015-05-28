@@ -39,9 +39,12 @@ That said, we’ve tried to copy schema.org schemas wherever possible, as well a
 
 ###Can I add additional properties to the Archetypes?
 
-Yes, but do it in your own application.  Mostly, developers want to add properties to the Archetypes that are relevant only to the application they want to make.  Nothing wrong with that.  Most people make **meta** objects for each Archetype and save them in their application’s own database.  There are infinite use-cases for the Archetypes, and if we attached properties for each use case, we’d have infinite bloat. 
+If you think the property is absolutely necessary, contribute to this repo :)
 
-Otherwise, if you think the property is absolutely necessary, contribute to this repo :)
+Mostly, developers want to add properties to the Archetypes that are relevant only to the application they want to make.  Nothing wrong with that.  But, there are infinite use-cases for the Archetypes, and if we attached properties for each use case, we’d have infinite bloat.
+
+The solution is to make **meta** objects for each Archetype record and save them in your own app's database.  For example, make a meta record in your database that relates to Product Archetype ID 881JKS0A891.  In that meta record you can extend that product with properties like views, SEO keywords, etc.   
+
 
 ###As a User, how can I store extra data in each Archetype (e.g. obscure product details)?
 
