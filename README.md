@@ -30,20 +30,24 @@ More on how to contribute to a Github project [here](https://guides.github.com/a
 
 
 ##F.A.Q.
+
 ###How is this different from Schema.org?
+
 JSON Archetypes are simpler versions of the schemas on schema.org.  While application developers can comprehend [the verbose, nested data architecture Schema.org uses](http://schema.org/docs/full.html "http://schema.org/docs/full.html"), it's still complex and not much fun to work with.
 
 That said, we’ve tried to copy schema.org schemas wherever possible, as well as their property names, so there will be interoperability.  Hopefully we can evolve to further resemble schema.org in the future.
 
 ###Can I add additional properties to the Archetypes?
-Yes, but do it in your own application.  Most of the time, developers want to put properties on the Archetypes that are only relevant to the applications they want to make.  Nothing wrong with that.  Most people make **meta** objects for each Archetype and save them in their application’s own database.  There are infinite use-cases for the Archetypes, and if we attached properties for each we’d have infinite bloat. 
+
+Yes, but do it in your own application.  Mostly, developers want to add properties to the Archetypes that are relevant only to the application they want to make.  Nothing wrong with that.  Most people make **meta** objects for each Archetype and save them in their application’s own database.  There are infinite use-cases for the Archetypes, and if we attached properties for each use case, we’d have infinite bloat. 
 
 Otherwise, if you think the property is absolutely necessary, contribute to this repo :)
 
 ###As a User, how can I store extra data in each Archetype (e.g. obscure product details)?
-Archetypes aren't going to be perfect for everyone.  But don't let the perfect be the enemy of good.  
 
-Occasionally, you may not be able to find room to squeeze in obscure details.  On the other hand, JSON Archetypes radically increase distribution and productivity of your data.  Yes, you may miss a small detail, but more importantly, you will be able to show and use your data EVERYWHERE.
+Archetypes aren't going to be 100% perfect for everyone.  But don't let perfect be the enemy of good.  
+Occasionally, you may not be able to find room to squeeze in obscure details.  On the other hand, the fixed formats of JSON Archetypes make it easy for apps to consume.  Yes, you may miss a small detail, but more importantly, you will increase distribution and overall productivity of your data by letting it be used everywhere.
 
 ###Bro, I found [this comic on XKCD](http://xkcd.com/927/) and it’s totally relevant.  Can I show it to you?
+
 We've seen it, laughed, and moved forward.
