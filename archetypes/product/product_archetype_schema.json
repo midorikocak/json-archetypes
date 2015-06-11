@@ -11,10 +11,10 @@
             "maxLength": 50,
             "default": ""
         },
-        "draft": {
-            "type": "boolean",
-            "description": "Indicates this archetype record is a draft and is not published",
-            "default": false
+        "state": {
+            "enum": ["draft", "published", "deleted"],
+            "description": "Indicates this archetype record's state",
+            "default": "draft"
         },
         "public_access": {
             "type": "boolean",
