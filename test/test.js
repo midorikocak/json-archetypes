@@ -27,10 +27,10 @@ test('****** Test Audio Lecture Archetype Schema', function(t) {
 });
 
 /**
- * Test Blog Post Archetype
+ * Test Article Archetype
  */
-test('****** Test Blog Post Archetype Schema', function(t) {
-    validator.validateSchema(JATs.archetypes.blog_post, function(err, report) {
+test('****** Test Article Archetype Schema', function(t) {
+    validator.validateSchema(JATs.archetypes.article, function(err, report) {
         console.log(err, report)
         t.equal(report.valid, true, 'Schema is valid per JSON Schema v4');
         t.end();

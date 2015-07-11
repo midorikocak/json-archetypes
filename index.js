@@ -9,7 +9,7 @@ var archetypes = {};
 
 archetypes.audio_book = require('./archetypes/audio_book/audio_book_archetype_schema');
 archetypes.audio_lecture = require('./archetypes/audio_lecture/audio_lecture_archetype_schema');
-archetypes.blog_post = require('./archetypes/blog_post/blog_post_archetype_schema');
+archetypes.article = require('./archetypes/article/article_archetype_schema');
 archetypes.event = require('./archetypes/event/event_archetype_schema');
 archetypes.image = require('./archetypes/image/image_archetype_schema');
 archetypes.job_listing = require('./archetypes/job_listing/job_listing_archetype_schema');
