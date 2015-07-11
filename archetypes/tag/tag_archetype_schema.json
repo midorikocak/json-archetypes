@@ -18,6 +18,12 @@
             "maxLength": 50,
             "default": ""
         },
+        "servant_id": {
+            "type": "string",
+            "description": "The servant to whom this record belongs",
+            "maxLength": 50,
+            "default": ""
+        },
         "state": {
             "type": "string",
             "enum": ["draft", "published", "deleted"],
