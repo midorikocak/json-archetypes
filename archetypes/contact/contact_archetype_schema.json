@@ -11,10 +11,16 @@
             "maxLength": 50,
             "default": ""
         },
-        "draft": {
-            "type": "boolean",
-            "description": "Indicates this archetype record is a draft and is not published",
-            "default": false
+        "_sid": {
+            "type": "string",
+            "description": "Unique short identifier for this archetype record",
+            "maxLength": 50,
+            "default": ""
+        },
+        "state": {
+            "enum": ["draft", "published", "deleted"],
+            "description": "Indicates this archetype record's state",
+            "default": "draft"
         },
         "public_access": {
             "type": "boolean",
@@ -166,7 +172,7 @@
             "items": {
                 "$ref": "image_archetype_schema.json"
             }
-        }, 
+        },
         "tags": {
             "type": "array",
             "description": "Array of Tag Archetypes that are used to help categorize this Archetype record",

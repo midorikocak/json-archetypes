@@ -4,7 +4,7 @@
     "description": "The Tag Archetype - Essential properties that define a Tag",
     "type": "object",
     "additionalProperties": false,
-    "required": ["tag"],
+    "required": ["tag", "archetype"],
     "properties": {
         "_id": {
             "type": "string",
@@ -12,10 +12,16 @@
             "maxLength": 50,
             "default": ""
         },
-        "draft": {
-            "type": "boolean",
-            "description": "Indicates this archetype record is a draft and is not published",
-            "default": false
+        "_sid": {
+            "type": "string",
+            "description": "Unique short identifier for this archetype record",
+            "maxLength": 50,
+            "default": ""
+        },
+        "state": {
+            "enum": ["draft", "published", "deleted"],
+            "description": "Indicates this archetype record's state",
+            "default": "draft"
         },
         "public_access": {
             "type": "boolean",
@@ -39,6 +45,11 @@
             "description": "The text of the tag entry",
             "maxLength": 140,
             "default": ""
+        },
+        "archetype": {
+            "enum": ["product", "article", "contact", "image", "tag", "tinytext"],
+            "description": "The archetype this tag is for",
+            "default": "contact"
         }
     }
 }

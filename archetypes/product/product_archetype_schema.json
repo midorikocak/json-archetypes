@@ -11,6 +11,12 @@
             "maxLength": 50,
             "default": ""
         },
+        "_sid": {
+            "type": "string",
+            "description": "Unique short identifier for this archetype record",
+            "maxLength": 50,
+            "default": ""
+        },
         "state": {
             "enum": ["draft", "published", "deleted"],
             "description": "Indicates this archetype record's state",

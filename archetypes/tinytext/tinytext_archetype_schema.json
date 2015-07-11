@@ -12,10 +12,16 @@
             "maxLength": 50,
             "default": ""
         },
-        "draft": {
-            "type": "boolean",
-            "description": "Indicates this archetype record is a draft and is not published",
-            "default": false
+        "_sid": {
+            "type": "string",
+            "description": "Unique short identifier for this archetype record",
+            "maxLength": 50,
+            "default": ""
+        },
+        "state": {
+            "enum": ["draft", "published", "deleted"],
+            "description": "Indicates this archetype record's state",
+            "default": "draft"
         },
         "public_access": {
             "type": "boolean",

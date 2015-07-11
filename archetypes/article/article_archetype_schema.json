@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Blog Post Schema",
-    "description": "The Blog Post Archetype - Essential properties that define a blog post",
+    "title": "Article Schema",
+    "description": "The Article Archetype - Essential properties that define an article",
     "type": "object",
     "additionalProperties": false,
     "properties": {
@@ -11,10 +11,16 @@
             "maxLength": 50,
             "default": ""
         },
-        "draft": {
-            "type": "boolean",
-            "description": "Indicates this archetype record is a draft and is not published",
-            "default": false
+        "_sid": {
+            "type": "string",
+            "description": "Unique short identifier for this archetype record",
+            "maxLength": 50,
+            "default": ""
+        },
+        "state": {
+            "enum": ["draft", "published", "deleted"],
+            "description": "Indicates this archetype record's state",
+            "default": "draft"
         },
         "public_access": {
             "type": "boolean",
