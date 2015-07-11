@@ -18,6 +18,7 @@
             "default": ""
         },
         "state": {
+            "type": "string",
             "enum": ["draft", "published", "deleted"],
             "description": "Indicates this archetype record's state",
             "default": "draft"

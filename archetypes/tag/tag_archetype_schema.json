@@ -19,6 +19,7 @@
             "default": ""
         },
         "state": {
+            "type": "string",
             "enum": ["draft", "published", "deleted"],
             "description": "Indicates this archetype record's state",
             "default": "draft"
@@ -47,6 +48,7 @@
             "default": ""
         },
         "archetype": {
+            "type": "string",
             "enum": ["product", "article", "contact", "image", "tag", "tinytext"],
             "description": "The archetype this tag is for",
             "default": "contact"
